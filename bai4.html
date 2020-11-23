@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra ký tự nhập vào có phải số hay không</title>
+</head>
+<body>
+<script>
+    function kiemtra(a){
+        if( a % 1 === 0) {
+            alert('Là số')
+        } else
+            alert('Là chữ')
+    }
+    function main(){
+        let x = prompt('Nhập ký tự');
+        kiemtra(x);
+    }
+    main();
+</script>
+
+</body>
+</html>

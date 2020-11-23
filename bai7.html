@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myArr = [];
+    let after = [];
+    function main(){
+        let x = parseInt(prompt('Nhập số t1'));
+        let y = parseInt(prompt('Nhập số t2'));
+        myArr.push(x, y);
+        console.log(myArr);
+        reverst(x, y);
+        console.log(after);
+    }
+    function reverst(a, b){
+            let swap = a;
+            a = b;
+            b = swap;
+            after.push(a, b);
+    }
+    main();
+</script>
+</body>
+</html>

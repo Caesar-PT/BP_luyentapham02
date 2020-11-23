@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kt = true;
+    function kiemtra(a){
+        if ( a > 0)
+            kt = true;
+        if ( a < 0 )
+            kt = false;
+        if ( a === 0 )
+            alert('Không xác định')
+        document.write(kt);
+    }
+    function main(){
+        let x = parseInt(prompt('Nhập vào 1 số'));
+        kiemtra(x);
+    }
+    main();
+</script>
+
+</body>
+</html>

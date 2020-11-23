@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = prompt('Nhập vào mảng ký tự');
+    let y = prompt('Nhập 1 ký tự để so sánh');
+    function main(){
+        sosanh();
+    }
+    function sosanh(){
+        let myArr = x.split(' ');
+        let solanxuathien = 0;
+        for (let i = 0; i < myArr.length; i++) {
+            if (y === myArr[i]) {
+                solanxuathien++;
+            }
+        }
+        if ( solanxuathien !== 0)
+        document.write('Số lần xuất hiện: ' + solanxuathien)
+        else {
+            solanxuathien = -1;
+            document.write('Số lần xuất hiện: ' + solanxuathien)
+        }
+
+    }
+    main();
+</script>
+</body>
+</html>

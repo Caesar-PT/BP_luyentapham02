@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sosanh(a, b, c) {
+        let minValue = a;
+        if (b < minValue)
+            minValue = b
+        if (c < minValue)
+            minValue = c
+        alert('Số nhỏ nhất: ' + minValue);
+    }
+
+    function main(){
+        let x = parseInt(prompt('Nhập x'));
+        let y = parseInt(prompt('Nhập y'));
+        let z = parseInt(prompt('Nhập z'));
+        sosanh(x, y, z);
+    }
+    main();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa 1 số nguyên bất kỳ</title>
+</head>
+<body>
+<script>
+    function main(){
+        let a = parseInt(prompt('Nhập số cần tính giai thừa'));
+        factorial(a);
+    }
+    function factorial(x){
+        let kq= 1;
+        for (let i = 1; i <= x; i++){
+            kq = kq*i;
+        }
+        alert(kq);
+    }
+    main();
+</script>
+
+</body>
+</html>

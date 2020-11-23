@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chu vi diện tích hình tròn</title>
+</head>
+<body>
+Bán kính D: <input type="text" id="bankinh"><input type="button" value="Tính toán" onclick="main()"><br>
+Chu vi : <label id="chuvi"></label><br>
+Dien tich: <label id="dientich"></label>
+<script>
+    function area(D){
+        document.getElementById('dientich').innerHTML = 3.14*D*D;
+    }
+    function perimeter(D){
+        document.getElementById('chuvi').innerHTML = 2*3.14*D;
+    }
+    function main(){
+        let i = document.getElementById('bankinh').value;
+        console.log(i);
+        area(i);
+        perimeter(i);
+    }
+</script>
+
+</body>
+</html>
